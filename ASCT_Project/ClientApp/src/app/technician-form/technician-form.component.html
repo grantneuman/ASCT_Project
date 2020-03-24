@@ -1,0 +1,18 @@
+
+<form>
+  <mat-form-field>
+    <mat-label for="tail-number">Tail Number</mat-label>
+    <input id="tail-number"
+           type="text"
+           placeholder="ex: 224AS"
+           matInput
+           [formControl]="myControl"
+           [matAutocomplete]="auto" />
+
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
