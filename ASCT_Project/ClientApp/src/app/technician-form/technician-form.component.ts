@@ -4,7 +4,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-import { TailNumberComponent } from './tail-number/tail-number.component';
 
 @Component({
   selector: 'app-technician-form',
