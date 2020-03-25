@@ -4,14 +4,13 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-import { TailNumberComponent } from './tail-number/tail-number.component';
 
 @Component({
-  selector: 'app-technician-form',
-  templateUrl: './technician-form.component.html',
-  styleUrls: ['./technician-form.component.css']
+  selector: 'tail-number',
+  templateUrl: './tail-number.component.html',
+  styleUrls: ['./tail-number.component.css']
 })
-export class TechnicianFormComponent {
+export class TailNumberComponent {
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
   filteredOptions: Observable<string[]>;
@@ -20,7 +19,7 @@ export class TechnicianFormComponent {
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
-      map(value=> this._filter(value))
+      map(value => this._filter(value))
     );
   }
 

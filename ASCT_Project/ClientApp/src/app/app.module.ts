@@ -15,6 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { SystemNameComponent } from './system-name/system-name.component';
+import { TailNumberComponent } from './tail-number/tail-number.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { MatInputModule } from '@angular/material/input';
     CounterComponent,
     FetchDataComponent,
     TechnicianFormComponent,
+    SystemNameComponent,
+    TailNumberComponent,
   ],
   imports: [
     MatInputModule,
