@@ -1,0 +1,7 @@
+<mat-card-actions>
+  <button layout-align="space-between" (click)="onBoeingClick()" mat-raised-button color="primary" [disabled]="fleetSelection=='Airbus'">Boeing</button>
+
+  <button layout-align="space-between"(click)="onAirbusClick()" mat-raised-button color="warn" [disabled]="fleetSelection=='Boeing'">Airbus</button>
+
+  <button (click)="onReset()" mat-raised-button color="accent">Reset</button>
+</mat-card-actions>

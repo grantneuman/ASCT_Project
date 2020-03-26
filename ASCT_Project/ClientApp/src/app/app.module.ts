@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +18,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SystemNameComponent } from './system-name/system-name.component';
 import { TailNumberComponent } from './tail-number/tail-number.component';
+import { FleetSelectComponent } from './fleet-select/fleet-select.component';
+import { FlexLayoutModule } from '@angular/flex-layout'
 
 @NgModule({
   declarations: [
@@ -28,8 +31,11 @@ import { TailNumberComponent } from './tail-number/tail-number.component';
     TechnicianFormComponent,
     SystemNameComponent,
     TailNumberComponent,
+    FleetSelectComponent,
   ],
   imports: [
+    FlexLayoutModule,
+  MatCardModule,
     MatInputModule,
     MatFormFieldModule,
   MatAutocompleteModule,
