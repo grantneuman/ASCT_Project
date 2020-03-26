@@ -1,0 +1,12 @@
+#airbus-btn, #boeing-btn, #reset-btn {
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#card {
+  border: 1px gray solid;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+}
