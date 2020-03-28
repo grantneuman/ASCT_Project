@@ -14,13 +14,22 @@ export class TechnicianFormComponent {
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
   filteredOptions: Observable<string[]>;
+  formSubmitted: boolean;
 
+  constructor() {
+    this.formSubmitted = false;
+  }
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
       map(value=> this._filter(value))
     );
+  }
+
+  onSubmit() {
+    console.log("hello");
+    this.formSubmitted = true;
   }
 
   private _filter(value: string): string[] {
