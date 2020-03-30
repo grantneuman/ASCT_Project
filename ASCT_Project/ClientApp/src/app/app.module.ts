@@ -23,6 +23,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { TechnicianOutputTableComponent } from './technician-output-table/technician-output-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { TableBasicExample} from './table-basic-example/table-basic-example.component';
+import { AdminFormComponent } from './admin-form/admin-form.component';
+import { ApproverConsoleComponent } from './approver-console/approver-console.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { MultiAutocompleteExampleComponent } from './multi-autocomplete-example/multi-autocomplete-example.component';
 
 @NgModule({
   declarations: [
@@ -37,9 +41,13 @@ import { TableBasicExample} from './table-basic-example/table-basic-example.comp
     FleetSelectComponent,
     TechnicianOutputTableComponent,
     TableBasicExample,
+    AdminFormComponent,
+    ApproverConsoleComponent,
+    MultiAutocompleteExampleComponent,
   ],
   imports: [
-    MatTableModule,
+    MatChipsModule,
+  MatTableModule,
     FlexLayoutModule,
   MatCardModule,
     MatInputModule,
@@ -53,6 +61,8 @@ import { TableBasicExample} from './table-basic-example/table-basic-example.comp
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'approver-console', component: ApproverConsoleComponent },
+      {path: 'admin-form', component: AdminFormComponent},
       { path: 'technician-form', component: TechnicianFormComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
