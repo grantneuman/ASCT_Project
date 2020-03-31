@@ -26,7 +26,6 @@ import { TableBasicExample} from './table-basic-example/table-basic-example.comp
 import { AdminFormComponent } from './admin-form/admin-form.component';
 import { ApproverConsoleComponent } from './approver-console/approver-console.component';
 import { MatChipsModule } from '@angular/material/chips';
-import { MultiAutocompleteExampleComponent } from './multi-autocomplete-example/multi-autocomplete-example.component';
 
 @NgModule({
   declarations: [
@@ -42,8 +41,7 @@ import { MultiAutocompleteExampleComponent } from './multi-autocomplete-example/
     TechnicianOutputTableComponent,
     TableBasicExample,
     AdminFormComponent,
-    ApproverConsoleComponent,
-    MultiAutocompleteExampleComponent,
+    ApproverConsoleComponent
   ],
   imports: [
     MatChipsModule,
